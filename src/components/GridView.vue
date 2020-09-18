@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <GridItem v-for="movie in movies" v-bind:key="movie.show.id" v-bind:movie="movie.show"/>
+    <GridItem v-for="movie in movies" v-bind:key="movie.id" v-bind:movie="movie"/>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     GridItem
   },
   props: {
-    movies: Object
+    movies: Array
   }
 }
 </script>

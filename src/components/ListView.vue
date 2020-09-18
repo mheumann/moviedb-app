@@ -4,11 +4,13 @@
       <tr>
         <th scope="col"></th>
         <th scope="col">Title</th>
+        <th scope="col">Genres</th>
+        <th scope="col">Erstausstrahlung</th>
         <th scope="col">Link</th>
       </tr>
     </thead>
     <tbody>
-      <ListItem v-for="movie in movies" v-bind:key="movie.show.id" v-bind:movie="movie.show"/>
+      <ListItem v-for="movie in movies" v-bind:key="movie.id" v-bind:movie="movie"/>
     </tbody>
   </table>
 </template>
@@ -22,7 +24,7 @@ export default {
     ListItem
   },
   props: {
-    movies: Object
+    movies: Array
   }
 }
 </script>

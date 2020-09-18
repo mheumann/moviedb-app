@@ -2,6 +2,8 @@
   <tr>
     <td><img class="img-thumbnail" :src="movie.image.medium" alt="movie cover"></td>
     <td class="align-middle">{{ movie.name }}</td>
+    <td class="align-middle">{{movie.genres.join(', ')}}</td>
+    <td class="align-middle">{{movie.premiered | date}}</td>
     <td class="align-middle"><a :href="movie.url" target="_blank">Show more</a></td>
   </tr>
 </template>
