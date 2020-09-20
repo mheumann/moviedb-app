@@ -8,8 +8,8 @@
     </div>
 
     <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" v-model="searchString" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" v-on:click="$emit('search', searchString)">Search</button>
     </form>
   </nav>
 </template>
@@ -19,7 +19,8 @@ export default {
   name: "Navbar",
   data: function () {
     return {
-      displayGrid: true
+      displayGrid: true,
+      searchString: ''
     }
   },
   methods: {
