@@ -1,24 +1,8 @@
-# app
+# MovieDB
 
-## Project setup
-```
-npm install
-```
+## Get running
+Prequesits: npm installed and API-Service running (https://github.com/mheumann/moviedb-api)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Checkout Repo
+2. Run `npm install`
+3. Run `npm run serve`
